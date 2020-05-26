@@ -18,7 +18,7 @@ public class MainApp {
 
         isNegative(-10);                                ///// 6) задача
 
-            String str = "Привет ";
+            String str = "Привет, ";
             printSomething(str+"Диман"+"!");         //// 7) задача
 
             isYear(2120);                       /////* 8ая задача
