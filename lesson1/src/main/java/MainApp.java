@@ -14,14 +14,14 @@ public class MainApp {
 
         printSomething(task10and20(10,30));                 ///// 4) задача
 
-        isPositiveOrNegative(-10);                      ///// 5) задача
+        printSomething(isPositiveOrNegative(10));                      ///// 5) задача
 
         isNegative(-10);                                ///// 6) задача
 
             String str = "Привет, ";
             printSomething(str+"Диман"+"!");         //// 7) задача
 
-            isYear(2120);                       /////* 8ая задача
+            isYear(2119);                       /////* 8ая задача
     }
 
     ///*8
@@ -66,14 +66,14 @@ public class MainApp {
         }
 
 //// 5
-        public static void isPositiveOrNegative (int w){
+        public static String isPositiveOrNegative (int w){
+           String pos;
             if (w < 0){
-                printSomething("Число отрицательное");
+                return "Число отрицательное";
             }
-//            if (w==0){
-//                printSomething("число 0");
-//            }
-            else printSomething("Число положительное");
+
+            else
+                return "Число положительное";
         }
 
 
