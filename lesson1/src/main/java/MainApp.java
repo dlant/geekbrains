@@ -14,42 +14,41 @@ public class MainApp {
 
         printSomething(task10and20(10,30));                 ///// 4) задача
 
-        isPositiveOrNegative(10);                      ///// 5) задача
+        printSomething(isPositiveOrNegative(10));                      ///// 5) задача
 
         isNegative(-10);                                ///// 6) задача
 
             String str = "Привет, ";
             printSomething(str+"Диман"+"!");         //// 7) задача
 
-            isYear(2021);                       /////* 8ая задача
+            printSomething(isYear(2000));                       /////* 8ая задача
     }
 
     ///*8
-           public static void isYear(int z){
+           public static String isYear(int z){
                 String yes ="Год " + z + " - високосный";
                 String no = "Год " + z + " - невисокосный";
 
                 if (z < 0){
-                    printSomething("Год не может быть отрицательным");
-                return;
+                return "Год не может быть отрицательным";
                 }
                 if (z>2100){
                     printSomething("какая тебе разница, столько не живут))");
                 }
                     if (z%400==0){                 //каждый 400ый?
-                        printSomething(yes);
-                    return;
+
+                    return yes;
                 }
 
                 if (z%100==0){                     //каждый 100ый?
-                    printSomething(no);
-                    return;
+                    return no;
                 }
 
                     if (z%4==0) {                  //каждый 4ый?
-                    printSomething(yes);}
+                   return yes;}
 
-                    else printSomething(no);
+                    else
+                        return no;
 
         }
 
@@ -66,14 +65,14 @@ public class MainApp {
         }
 
 //// 5
-        public static void isPositiveOrNegative (int w){
+        public static String isPositiveOrNegative (int w){
+       
             if (w < 0){
-                printSomething("Число отрицательное");
+                return "Число отрицательное";
             }
-//            if (w==0){
-//                printSomething("число 0");
-//            }
-            else printSomething("Число положительное");
+
+            else
+                return "Число положительное";
         }
 
 
