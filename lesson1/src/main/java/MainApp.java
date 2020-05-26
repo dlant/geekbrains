@@ -24,6 +24,7 @@ public class MainApp {
             isYear(2021);                       /////* 8ая задача
     }
 
+    ///*8
            public static void isYear(int z){
                 String yes ="Год " + z + " - високосный";
                 String no = "Год " + z + " - невисокосный";
@@ -52,19 +53,19 @@ public class MainApp {
 
         }
 
-
+///// 3
         public static float calculate ( float a, float b, float c, float d){
 
         return a * (b + (c / d));
         }
 
-
+//// 4
         public static boolean task10and20 (int x1, int x2) {
 
             return ((x1 + x2)<= 20 && (x1 + x2) >= 10);
         }
 
-
+//// 5
         public static void isPositiveOrNegative (int w){
             if (w < 0){
                 printSomething("Число отрицательное");
@@ -75,6 +76,8 @@ public class MainApp {
             else printSomething("Число положительное");
         }
 
+
+//// 6
         public static boolean isNegative(int x) {
 
             boolean m = (x < 0);
