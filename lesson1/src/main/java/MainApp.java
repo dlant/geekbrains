@@ -14,14 +14,14 @@ public class MainApp {
 
         printSomething(task10and20(10,30));                 ///// 4) задача
 
-        isPositiveOrNegative(10);                      ///// 5) задача
+        isPositiveOrNegative(-10);                      ///// 5) задача
 
         isNegative(-10);                                ///// 6) задача
 
             String str = "Привет ";
             printSomething(str+"Диман"+"!");         //// 7) задача
 
-            isYear(2021);                       /////* 8ая задача
+            isYear(2120);                       /////* 8ая задача
     }
 
     ///*8
