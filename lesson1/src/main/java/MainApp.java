@@ -66,7 +66,7 @@ public class MainApp {
 
 //// 5
         public static String isPositiveOrNegative (int w){
-           String pos;
+       
             if (w < 0){
                 return "Число отрицательное";
             }
