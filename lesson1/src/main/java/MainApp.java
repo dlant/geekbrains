@@ -21,35 +21,34 @@ public class MainApp {
             String str = "Привет, ";
             printSomething(str+"Диман"+"!");         //// 7) задача
 
-            isYear(2119);                       /////* 8ая задача
+            printSomething(isYear(2000));                       /////* 8ая задача
     }
 
     ///*8
-           public static void isYear(int z){
+           public static String isYear(int z){
                 String yes ="Год " + z + " - високосный";
                 String no = "Год " + z + " - невисокосный";
 
                 if (z < 0){
-                    printSomething("Год не может быть отрицательным");
-                return;
+                return "Год не может быть отрицательным";
                 }
                 if (z>2100){
                     printSomething("какая тебе разница, столько не живут))");
                 }
                     if (z%400==0){                 //каждый 400ый?
-                        printSomething(yes);
-                    return;
+
+                    return yes;
                 }
 
                 if (z%100==0){                     //каждый 100ый?
-                    printSomething(no);
-                    return;
+                    return no;
                 }
 
                     if (z%4==0) {                  //каждый 4ый?
-                    printSomething(yes);}
+                   return yes;}
 
-                    else printSomething(no);
+                    else
+                        return no;
 
         }
 
