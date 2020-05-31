@@ -17,7 +17,7 @@ public class MainApp {
 //       minMax();
 
 //        int[] array = {1, 10, 2, 1, 2, 2, 2, 2};
-//       System.out.println(" " + compare(array));
+//       System.out.println(" " + checkSum(array));
 
 //        int[] table = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 //        int n=-3;
@@ -126,7 +126,7 @@ public class MainApp {
     }
 
 
-    static boolean compare(int[] arr) {                       //6) если долго мучиться, что-нибудь получится..
+    static boolean checkSum(int[] arr) {                       //6) если долго мучиться, что-нибудь получится..
         int sumLeft = 0;
         int sumRight = 0;
         int counter = 1;
