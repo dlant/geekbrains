@@ -14,7 +14,9 @@ public class MainClass {
             horse.run(1300);
             cat.jump(1.7);
             bird.swim(2);
+            bird.jump(1);
             horse2.run(1950);
+            horse2.swim(160);
             dog1.run(600);
             horse1.run(1800);
 

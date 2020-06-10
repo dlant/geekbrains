@@ -9,8 +9,8 @@ public class Horse extends Animal {
     }
     @Override
     public void run(int dist) {
-        if (dist<=this.runLength) System.out.println(this.type + " " + this.name + " проcкакал " + dist + "м "+
+        if (dist<=this.runLength) System.out.println(type + " " + name + " проcкакал " + dist + "м "+
                 "из максимальных "+runLength);
-        else System.out.println(this.type + " " + this.name + " не сможет проскакать столько "+",максимум " +
+        else System.out.println(type + " " + name + " не сможет проскакать столько "+",максимум " +
                 runLength);}
 }

@@ -9,6 +9,6 @@ public class Bird extends Animal{
     }
     @Override
     public void swim(int swim){
-        System.out.println("птица не умеет плавать");
+        System.out.println(type+" "+name+" не умеет плавать");
     }
 }
