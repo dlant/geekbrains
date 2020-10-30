@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.CountDownLatch;
 import java.util.stream.Collectors;
-import static ru.dlant.cloud.storage.client.FxApp.stageMain;
+
 
 
 public class Controller implements Initializable {

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.dlant.cloud.storage.client.Controller">
+    <children>
+        <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" prefWidth="800.0" text="Welcome to BrainCloud">
+            <font>
+                <Font name="System Bold italic" size="64.0" />
+
+            </font>
+        </Label>
+        <VBox fx:id="authPanel" alignment="CENTER" layoutX="341.0" layoutY="358.0">
+            <TextField fx:id="loginField" layoutY="200.0" promptText="Логин" HBox.hgrow="ALWAYS" />
+            <PasswordField fx:id="passField" promptText="Пароль" HBox.hgrow="ALWAYS">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </PasswordField>
+            <Button onAction="#sendAuth" text="Подключиться" HBox.hgrow="ALWAYS">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+            </Button>
+            <!--            <VBox.margin>-->
+            <!--                <Insets left="10.0" right="10.0" />-->
+            <!--            </VBox.margin>-->
+        </VBox>
+
+        <VBox fx:id="storagePanel" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<TextField editable="false"/>
+<HBox>
+    <fx:include fx:id="ClientPanel" source="panel.fxml" HBox.hgrow="ALWAYS"/>
+    <fx:include fx:id="ServerPanel" source="panel.fxml" HBox.hgrow="ALWAYS"/>
+</HBox>
+
+
+            <HBox spacing="5">
+                <Button focusTraversable="false" maxWidth="Infinity" onAction="#btnSendFile" text="Отправить" HBox.hgrow="ALWAYS" />
+                <Button focusTraversable="false" maxWidth="Infinity" text="Удалить" HBox.hgrow="ALWAYS" />
+
+                <Button focusTraversable="false" maxWidth="Infinity" onAction="#btnDownloadFile" text="Скачать" HBox.hgrow="ALWAYS" />
+                <Button focusTraversable="false" maxWidth="Infinity" onAction="#btnServerFileDelete" text="Удалить" HBox.hgrow="ALWAYS" />
+            <padding>
+                <Insets bottom="5" left="5" right="5" top="5"/>
+            </padding>
+
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
