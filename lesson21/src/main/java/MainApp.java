@@ -17,11 +17,11 @@ public class MainApp {
 //       minMax();
 
 //        int[] array = {1, 10, 2, 1, 2, 2, 2, 2};
-//       System.out.println(" " + compare(array));
+//       System.out.println(" " + checkSum(array));
 
-//        int[] table = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-//        int n=-3;
-//        System.out.println(Arrays.toString(pushArray((table),n)));
+        int[] table = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int n=3;
+        System.out.println(Arrays.toString(pushArray((table),n)));
 
     }
 
@@ -60,7 +60,7 @@ public class MainApp {
     public static void changeArray() {                             //  3) числа меньшие 6 умножить на 2;
         int[] change = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int base : change)
-            System.out.printf("%3d", base);
+            System.out.printf("%3d", change);
         System.out.println(" - исходный массив");
 
         for (int a = 0; a < change.length; a++) {
@@ -126,7 +126,7 @@ public class MainApp {
     }
 
 
-    static boolean compare(int[] arr) {                       //6) если долго мучиться, что-нибудь получится..
+    static boolean checkSum(int[] arr) {                       //6) если долго мучиться, что-нибудь получится..
         int sumLeft = 0;
         int sumRight = 0;
         int counter = 1;

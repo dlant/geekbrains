@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Personnel {
     //    Создать класс "Сотрудник" с полями: ФИО, должность, email, телефон, зарплата, возраст.
 //    Конструктор класса должен заполнять эти поля при создании объекта.
@@ -13,8 +15,7 @@ public class Personnel {
     private int salary;
 
 
-
-    public Personnel(String name,String position,String email,String phone,int salary, int birthYear){
+    public Personnel(String name, String position, String email, String phone, int salary, int birthYear) {
         this.name = name;
         this.position = position;
         this.email = email;
@@ -23,33 +24,37 @@ public class Personnel {
         this.birthYear = birthYear;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
-    public int getAge(){
+
+    public int getAge() {
         return this.age = CURRENT_YEAR - birthYear;
     }
-    public int getBirthYear(){
+
+    public int getBirthYear() {
         return this.birthYear;
     }
 
-    public int getSalary(){
+    public int getSalary() {
         return this.salary;
     }
-    public String getPosition(){
+
+    public String getPosition() {
         return this.position;
     }
-    public String toString()
-    {
-        return "ФИО: "+name+" \tдолжность: "+position+"\t  E-mail: "+ email+"\t    телефон: " + phone +"\t зп: "+salary +"\t возраст: "+age+"\tгод рождения: "+ birthYear;
+
+    public String toString() {
+        return "ФИО: " + name + " \tдолжность: " + position + "\t  E-mail: " + email + "\t    телефон: " + phone + "\t зп: " + salary + "\t возраст: " + age + "\tгод рождения: " + birthYear;
 
     }
 
-    public void printAllStaff(){
+    public void printAllStaff() {
         System.out.println(this);
     }
+
     public void print() {
-        System.out.println("ФИО: "+name+" \tдолжность: "+position+"\t  E-mail: "+ email+"\t    телефон: " + phone +"\t зп: "+salary +"\t возраст: "+age);
+        System.out.println("ФИО: " + name + " \tдолжность: " + position + "\t  E-mail: " + email + "\t    телефон: " + phone + "\t зп: " + salary + "\t возраст: " + age);
     }
 
 }

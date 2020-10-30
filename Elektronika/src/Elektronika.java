@@ -78,11 +78,11 @@ class CalculatorPanel extends JPanel {
     private void addButton(String label, ActionListener listener) {
         JButton button = new JButton(label);
         button.setBackground(Color.GRAY);
-//        int red = (int)(Math.random()*255);
-//        int green = (int)(Math.random()*255);
-//        int blue = (int)(Math.random()*255);
-//        Color randomColor= new Color(red,green,blue);
-//        button.setBackground(randomColor);
+        int red = (int)(Math.random()*255);
+        int green = (int)(Math.random()*255);
+        int blue = (int)(Math.random()*255);
+        Color randomColor= new Color(red,green,blue);
+        button.setBackground(randomColor);
         button.setForeground(Color.white);
         Font font = new Font("constanb", Font.BOLD,14);
         button.setFont(font);
@@ -115,7 +115,8 @@ class CalculatorPanel extends JPanel {
                 if (command.equals("-")) {
                     displayFormattedField.setText(command);
                     start = false;
-                } else lastCommand = command;
+                }
+            else lastCommand = command;
             } else {
                 calculate(Double.parseDouble(displayFormattedField.getText()));
                 lastCommand = command;
@@ -129,7 +130,10 @@ class CalculatorPanel extends JPanel {
         else if (lastCommand.equals("*")) result *= x;
         else if (lastCommand.equals("/")) result /= x;
         else if (lastCommand.equals("=")) result = x;
-        displayFormattedField.setText("" + result);
+        if(result-(int)result==0){
+            displayFormattedField.setText("" + (int)result);
+                }
+        else displayFormattedField.setText("" + result);
     }
     private JButton display;
     private JPanel panel;

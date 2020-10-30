@@ -13,12 +13,12 @@ public class MainClass {
                 40000, 1975);
         staff[4] = new Personnel("Sergei Belov", "medic", "cureit@yandex.ru", "89283217678",
                 60000, 1978);
-        System.out.println();
-        System.out.println("\t\t\t\t\t\t\t\t\t\t Список сотрудников старше 40 лет\n");
+//        System.out.println();
+//        System.out.println("\t\t\t\t\t\t\t\t\t\t Список сотрудников старше 40 лет\n");
         for (int i = 0; i < staff.length; i++) {
-            if (staff[i].getAge() > 40) {staff[i].print();}
-//            staff[i].getAge();
-//            staff[i].printAllStaff();
+//            if (staff[i].getAge() > 40) {staff[i].print();}
+            staff[i].getAge();
+            staff[i].printAllStaff();
 //            if(staff[i].getPosition().equals("driver")){staff[i].print();}
 
 //            if(staff[i].getSalary()> 60000){staff[i].print();}
